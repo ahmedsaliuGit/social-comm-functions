@@ -1,10 +1,12 @@
+const functions = require("firebase-functions");
+
 module.exports = {
-  apiKey: "AIzaSyCZtGYm1XfAWhnPfvJUI18SrAoYdiWk7Ds",
+  apiKey: functions.config().project.key,
   authDomain: "social-comm.firebaseapp.com",
-  projectId: "social-comm",
+  projectId: functions.config().project.id,
   storageBucket: "social-comm.appspot.com",
   messagingSenderId: "138076014246",
-  appId: "1:138076014246:web:24ccb6a8a604f31a9e9667",
+  appId: functions.config().app.id,
   measurementId: "G-T6GENF8Q65",
   databaseURL: "social-com.firebaseio.com",
 };
